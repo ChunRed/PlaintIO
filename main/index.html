@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLaintIO</title>
-    
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./style.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PLaintIO</title>
 
-    <script src="./node_modules/p5/lib/p5.js"></script>
-    
-    
-    <!-- for firebase-->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/firebase@6.1.0/firebase.js"></script>
-    <!-- for firebase-->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.css"
+            rel="stylesheet">
+        <link href="./style.css" rel="stylesheet">
 
-    
-</head>
-<body>
-    <h1 class="text-center mt-5">- PlaintIO -</h1>
-    <div class="hr_line"></div>
+        <script src="./node_modules/p5/lib/p5.js"></script>
 
-    <script src="./main.js"></script>
-</body>
+        <!-- for firebase-->
+        <script
+            src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script
+            src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/firebase@6.1.0/firebase.js"></script>
+        <!-- for firebase-->
+
+    </head>
+    <body>
+        <h1 class="text-center mt-5">- PlaintIO -</h1>
+        <div class="hr_line"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <button class="btn btn-block btn-dark p-3" onclick="change()" ><h3>Light Button</h3></button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="light_state" class="h3 text-center mt-3">Light State : </div>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
 </html>

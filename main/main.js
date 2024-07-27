@@ -38,18 +38,13 @@ var val = true;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    button = createButton('click me');
-    button.position(windowWidth / 2, windowHeight / 2);
+    
 }
 
 
 
 function draw() {
     background(255);
-    button.mousePressed(change);
-
-    if (val) text("light close", windowWidth / 2, windowHeight / 2 - 30);
-    else text("light open", windowWidth / 2, windowHeight / 2 - 30);
 }
 
 
@@ -63,6 +58,7 @@ let timer = setInterval(function () {
         var data = snapshot.val();
         changeUI(snapshot.val());
         console.log(data);
+        document.getElementById('light_state').innerHTML = 'Light State : ' + !data;
     });
 }, 1000);
 
