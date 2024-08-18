@@ -35,5 +35,5 @@ io.on('connection', function (socket) {
 });
 
 
-let PORT = 3000;
+let PORT = 80;
 http.listen(PORT, () => console.log(`Server running on port ${PORT}`));
