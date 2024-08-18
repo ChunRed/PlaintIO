@@ -60,6 +60,7 @@ let timer = setInterval(function () {
         console.log(data);
         document.getElementById('light_state').innerHTML = 'Light State : ' + !data;
     });
+    
 }, 1000);
 
 
